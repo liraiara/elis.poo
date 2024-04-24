@@ -60,7 +60,7 @@ public class Main {
         this.amiga = amiga;
     }
 
-    // Método main corrigido
+    
     public static void main(String[] args) {
         Main elis = new Main("Elis Regina", 1945, "Clara Nunes");
         elis.apresentar();
