@@ -1,20 +1,18 @@
-    public class Main {
-    public static void main(String[] args)
-
+public class Main {
     private String nome;
     private int anoNascimento;
     private String amiga;
     private boolean cantando;
 
-
-    public Main(String nome, int anoNascimento, String Clara) {
+    
+    public Main(String nome, int anoNascimento, String amiga) {
         this.nome = nome;
         this.anoNascimento = anoNascimento;
-        this.amiga= Clara;
+        this.amiga= amiga;
         this.cantando = false;
     }
 
-
+    
     public void cantar() {
         if (!cantando) {
             System.out.println(nome + " está cantando!");
@@ -34,12 +32,10 @@
     }
 
     public void apresentar() {
-        System.out.println("Olá, eu sou " + nome + " (apelido: " + amiga + ") e nasci em " + anoNascimento + ".");
+        System.out.println("Olá, eu sou " + nome + " minha amiga é: " + amiga + " e nasci em " + anoNascimento + ".");
     }
 
-    // Outros métodos podem ser adicionados conforme necessário
-
-    // Getters e Setters
+    
     public String getNome() {
         return nome;
     }
@@ -60,7 +56,15 @@
         return amiga;
     }
 
-    public void setAmiga(String Clara) {
-        this.amiga = Clara;
+    public void setAmiga(String amiga) {
+        this.amiga = amiga;
     }
+
+    // Método main corrigido
+    public static void main(String[] args) {
+        Main elis = new Main("Elis Regina", 1945, "Clara Nunes");
+        elis.apresentar();
+        elis.cantar();
+        elis.pararDeCantar();
     }
+            }
