@@ -1,10 +1,10 @@
 public class Main {
-    private String nome;
-    private int anoNascimento;
-    private String amiga;
-    private boolean cantando;
+    String nome;
+    int anoNascimento;
+    String amiga;
+    boolean cantando;
 
-    
+
     public Main(String nome, int anoNascimento, String amiga) {
         this.nome = nome;
         this.anoNascimento = anoNascimento;
@@ -12,7 +12,7 @@ public class Main {
         this.cantando = false;
     }
 
-    
+
     public void cantar() {
         if (!cantando) {
             System.out.println(nome + " está cantando!");
@@ -35,7 +35,7 @@ public class Main {
         System.out.println("Olá, eu sou " + nome + " minha amiga é: " + amiga + " e nasci em " + anoNascimento + ".");
     }
 
-    
+
     public String getNome() {
         return nome;
     }
@@ -60,11 +60,11 @@ public class Main {
         this.amiga = amiga;
     }
 
-    
+
     public static void main(String[] args) {
         Main elis = new Main("Elis Regina", 1945, "Clara Nunes");
         elis.apresentar();
         elis.cantar();
-        elis.pararDeCantar();
+
     }
-            }
+}
